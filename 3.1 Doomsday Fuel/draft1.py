@@ -18,7 +18,6 @@ def solution(m):
     dimension = len(matrix)
     
     #Get Terminal States
-    terminalStates = []
     for index, value in enumerate(matrix):
         terminalStates = []
         isTerminal = True
@@ -33,7 +32,7 @@ def solution(m):
     #Find Possible Routes
     possibleRoutes = []
     for firstState in matrix[0, :]:
-        ###Might Have to turn each row into it's own array or something idk
+        #Might Have to turn each row into it's own array or something idk
         print(firstState)
         if (firstState != 0):
             thisPath = [0, firstState]
