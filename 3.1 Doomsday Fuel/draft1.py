@@ -20,6 +20,7 @@ def solution(m):
     #Get Terminal States
     terminalStates = []
     for index, value in enumerate(matrix):
+        terminalStates = []
         isTerminal = True
         for j in value:
             if (j != 0):
