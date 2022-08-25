@@ -6,6 +6,8 @@ Breadth First
     - Optimal for searching a tree that is wider than it is deep
     - Uses a queue to store information about tree
     - Uses more memory bc stores pointers
+    - Tends to be a looping algorithm
+    - O(V + E) where V = vertices, E = edges
 
 Depth First
     - Searches tree (or graph) by searching depth, starting at root
@@ -15,9 +17,71 @@ Depth First
 
     - Optimal for searching a tree deeper than it is wide
     - Uses a stack to push nodes onto
-    Less memory intensive than breadth first
+    - Less memory intensive than breadth first
+    - Tends to be a recursive algorithm
+    - O([E] + [V]) where V = vertices, E = edges
 
+Merge Sort
+    - Comparison based sorting algorithm
+    - Divides dataset into groups of at most 2
+    - Moves smaller number to left of pair
+    - Compares left most elements of 2 leftmost pairs creating a sorted group of four with the smallest numbers on the left and largest on the right
+    - Process is repeated until there is only one store
+
+Quick Sort*
+    - Divides dataset in half by selecting middle element and putting all smaller elements to the left and larger to the right
+    - Repeats on left side until is only comparing two elements
+    - Repeats on right side until only comparing two elements
+    - Computer architecture favors Quick Sort
+        - Is often faster in practice than Merge Sort and other O(n log n)
+
+Bubble Sort
+    - Iterates left to right comparing every couplet, moving smaller element to left
+    - Repeats this process until it no longer moves an element to the left
+    - Simple to implement but relatively inefficient
+    - moves one space to the right at a time
+
+Heap Sort
+    - 
+
+Tim Sort
+    -
+
+Insertion Sort
+    -
+
+Selection Sort
+    -
+
+Radix Sort
+    -
+
+Counting Sort
+    -
+
+Binary Search
+    -
 
 Time Complexities:
-    Breadth First: O(V + E) where V = vertices, E = edges
-    Depth First: O([E] + [V]) where V = vertices, E = edges
+    Merge Sort:     O(n log n)
+    Quick Sort:     O(n log n)
+    Bubble Sort:    O(n^2)
+
+    O(n + k): Bucketsort, Radixsort, Countingsort
+    O(n log n): Quicksort, Mergesort, Timsort, Heapsort, Treesort, Cubesort
+    O(n^2): Bubblesort, Insertionsort, Selectionsort
+
+    *Heapsort uses O(1) space complexity
+    *Quicksort uses O(log(n)) space complexity
+
+Greedy Algorithms
+    - Selects only information that meets a certain criteria
+    1. Candidate set, from which solution is created
+    2. Selection function, chooses best candidate to be added to solution
+    3. Feasibility function, determines if candidate can contribute to solution
+    4. Objective function, assigns a value to a solution, or partial solution
+    5. Solution function, indicates when we have discovered a complete solution
+
+    - Used to find fastest, non-optimal solution
+    - Used on data sets where a small proportion of information meets the desired result
+    - Can help reduce Big O

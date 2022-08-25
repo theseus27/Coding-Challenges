@@ -6,6 +6,17 @@ Arrays
     Dynamic arrays: 1D, have reserved space, if full will copy to larger array
         - Vectors in C++
 
+    Subarray: range of contiguous values within an array
+    Subsequence: can be derived by deleting elements, no rearranging
+
+    Edge Cases: Empty sequence, sequence w/ 1-2 elements, sequence w/ repeated elements, duplicated values in sequence
+
+    Sliding Window: two pointers move in same general direction but never overtake each other
+
+    Acccess/Insert at end/Remove at end: O(1)
+    Searching sorted array: O(log n)
+    Search/Insert/Remove: O(n)
+
 Linked Lists
     - Stores data with nodes that point to other nodes
     - Nodes have one datum and one reference (another node)
@@ -22,6 +33,12 @@ Linked Lists
         - FIFO (first in first out)
         Made with a doubly linked list that only removes from head and adds to tail
 
+    Edge Cases: Empty linked list, single node, two nodes, cycles
+
+    Singly Linked List
+    Insert, remove: O(1) (assumes you have traversed to node in question)
+    Access, Search: O(n)
+
 Hash Tables / Hash Maps
     - Stores data w/ key-value pairs
     - Hash functions accept a key and return an output unique only to that key
@@ -29,6 +46,11 @@ Hash Tables / Hash Maps
     - Hash collisions occur when a hash function returns same output for two different inputs
     - Important for associative arrays and DB indexing
     - Optimizes searching, insertion, and deletion
+
+    Seperate Chaining: LL is used for each value, so stores collided items
+    Open Addressing: All records stored in bucket array. When adding a new entry, buckets are examined until an unoccupied slot is found.
+
+    Search, Insert, Remove: O(1)    on avg
     
 Binary Tree
     - Every node has two children (left and right)
@@ -38,6 +60,39 @@ Binary Tree
     - No duplicate nodes
 
     AVL Tree: Self-balancing BST, difference in heights between left and right subtrees can't exceed 1
+
+    Corner Cases: empty tree, single node, two nodes, skewed tree
+
+    In-Order Traversal: Left -> Root -> Right
+    Pre-Order Traversal: Root -> Left -> Right
+    Post-Order Traversal: Left -> Right -> Root
+
+    Access, Search, Insert, Remove: O(log n)
+
+Matrix
+    - 2D Array
+    - Questions usually related to dynamic programming or graph traversal
+    - Each node is a cell which has 4 neighbors on a graph
+
+    Edge Cases: empty matrix, 1x1 matrix, only 1 row or column
+
+    Python:
+    Create empty NxM matrix:
+    zero_matrix = [[0 for _ in range(len(matrix[0]))] for _ in range(len(matrix))]
+    Copy Matrix:
+    copied_matrix = [row[:] for row in matrix]
+    Transposed matrix (switch rows and columns)
+    transposed_matrix = zip(*matrix)
+
+Graph
+    - Set of objects (nodes or vertices) with edges
+    - Edges can be directed or undirected and can optionally have values (weighted graph)
+    - Trees are undirected graphs in which any two vertices are connected by 1 edge and there are no cycles
+
+    - Often represents relationships between people, distances between locations
+
+    Breadth-first Search: queue (use double-ended queues)
+    Depth-first Search: implicit recursion stack or stack
 
 Time Complexities
     https://www.bigocheatsheet.com/
@@ -72,6 +127,18 @@ Time Complexities
         Indexing:           O(log n)
         Search:             O(log n)
         Insertion:          O(log n)
+
+Heap
+    - Tree basd data structure which satisfies heap property
+    - Max Heap - the value of a node must be the greatest among the node values in its entire subtree
+    - Min Heap - value of a node must be smallest among all nodes in its subtree
+
+    - Can be treated as a priority queue in terms of DS
+    - Useful when you need to repeatedly remove the object with the highest/lowest priority, or when insertions need to be interspersed w/ removals of root
+
+Dynamic Programming
+    - Solve optimization problems
+    
 
 Best Structures by Operation
     Index:  Array O(1)          Binary Search Tree O(log n)
