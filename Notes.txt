@@ -1,0 +1,11 @@
+Given an array called nums,
+    nums = sorted(nums)     works with no imports
+    nums = nums.sort()      requires NumPy
+
+Rounding to a certain number of decimals,
+    round(num, places)      OR
+    "%.2f" % num            OR
+    print(f'{num:.2f}')
+
+Empty set notation
+    numset = set()

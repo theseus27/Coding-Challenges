@@ -1,0 +1,23 @@
+Breadth First
+    - Searches a tree (or graph) by levels of the tree, starting at the root
+    - Finds each node on same level, moving left to right
+    - Last evaluated is bottom right node
+
+    - Optimal for searching a tree that is wider than it is deep
+    - Uses a queue to store information about tree
+    - Uses more memory bc stores pointers
+
+Depth First
+    - Searches tree (or graph) by searching depth, starting at root
+    - Traverses left down a tree until can't go further
+    - When reaches end of branch, traverses back up trying right child of nodes on that branch, and if possible left children of rights
+    - Right most node is evaluated last
+
+    - Optimal for searching a tree deeper than it is wide
+    - Uses a stack to push nodes onto
+    Less memory intensive than breadth first
+
+
+Time Complexities:
+    Breadth First: O(V + E) where V = vertices, E = edges
+    Depth First: O([E] + [V]) where V = vertices, E = edges

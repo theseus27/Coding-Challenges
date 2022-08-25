@@ -1,5 +1,16 @@
 #                 GENERAL PROGRAMMING
 
+#Recursion
+def recurse(start, end, current_value):
+    if something == something:
+        #global_variable.append(current_value)
+        return
+        #etc
+    else:
+        #do something to get a new start
+        #do something to current_value
+        recurse(new_start, start, current_value)
+        
 
 #                       SYNTAX
 word = "hi.i.am.theseus"
@@ -21,4 +32,4 @@ word[-1:]    # = "o"
 
 #Tuples
 tupleList = [(1, True, "a"), (2, False, "b")]
-tupleList[0][1] = # True
+tupleList[0][1] # = True

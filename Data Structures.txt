@@ -1,0 +1,79 @@
+Arrays
+    - Optimal for indexing, adding to end
+    - Bad at searching, inserting, deleting
+
+    Linear arrays: 1D, declared with a static fixed size
+    Dynamic arrays: 1D, have reserved space, if full will copy to larger array
+        - Vectors in C++
+
+Linked Lists
+    - Stores data with nodes that point to other nodes
+    - Nodes have one datum and one reference (another node)
+    - Good at insertion and deletion
+    - Bad at indexing and searching
+
+    Doubly Linked: nodes that references previous node as well
+    Circularly Linked: tail (last node) references head (first node)
+
+    Stack: (commonly implemented w/ LL but can be made from arrays)
+        - LIFO (last in first out)
+        - Made with a linked list by having the head be the only place for insertion and removal
+    Queues: (LL or array)
+        - FIFO (first in first out)
+        Made with a doubly linked list that only removes from head and adds to tail
+
+Hash Tables / Hash Maps
+    - Stores data w/ key-value pairs
+    - Hash functions accept a key and return an output unique only to that key
+        (input and output have a 1-to-1 mapping relationship)
+    - Hash collisions occur when a hash function returns same output for two different inputs
+    - Important for associative arrays and DB indexing
+    - Optimizes searching, insertion, and deletion
+    
+Binary Tree
+    - Every node has two children (left and right)
+    - Designed to optimize searching and sorting
+    - Unbalanced/degenerate tree (if entirely one-sided is just a LL)
+    - Left child is smaller than parent; Right child is greater
+    - No duplicate nodes
+
+    AVL Tree: Self-balancing BST, difference in heights between left and right subtrees can't exceed 1
+
+Time Complexities
+    https://www.bigocheatsheet.com/
+
+    Fastest to Slowest:
+        O(1)
+        O(log n)
+        O(n)
+        O(n log n)
+        O(n^2)
+        O(2^n)
+        O(n!)
+
+    Arrays
+        Indexing:           O(1)
+        Search:             O(n)
+        Optimized Search:   O(log n)
+        Insertion:          O(n)
+
+    Linked Lists
+        Indexing:           O(n)
+        Search:             O(n)
+        Optimized Search:   O(n)
+        Insertion:          O(1)
+
+    Hash Tables / Hash Maps
+        Indexing:           O(1)
+        Search:             O(1)
+        Insertion:          O(1)
+
+    Binary Trees
+        Indexing:           O(log n)
+        Search:             O(log n)
+        Insertion:          O(log n)
+
+Best Structures by Operation
+    Index:  Array O(1)          Binary Search Tree O(log n)
+    Search: Hash Table O(1)     Binary Search Tree O(log n)
+    Insertion\Deletion: LinkedList, Hash Table O(1)
