@@ -1,0 +1,14 @@
+Range from 300 to 850
+If you submit at least one task: 600 to 850
+
+660: Can do simple stuff
+710: Good implemmentation skills (most tech companies require this)
+760: Can develop large applications
+810: Great problem solving skills, can implement ideas that don't require too much coding
+840: Excellent algorithmic, problem-solving, and implementation skills
+
+***The third task is the long one, so maybe skip that haha
+
+***Most companies want above 800
+
+Practice Test: 720

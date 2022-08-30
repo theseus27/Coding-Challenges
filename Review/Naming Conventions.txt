@@ -1,0 +1,21 @@
+PYTHON
+
+    Instance methods should have their first argument named self
+    Class methods should have their first argument named cls
+
+package_names_all_lowerc_w_underscores  (preferable to stick to 1 word names)
+module_names_also_all_l_w_u             (preferable to stick to 1 word names)
+ClassNamesUpperCaseCamelCase
+    python      (Python's built in classes are typically lower 1 word)
+
+global_variables
+instance_variables
+_non_public_instance_variables
+__instance_name_needs_to_be_mangled
+
+method_names
+_non_public_method_names
+
+function_names
+
+CONSTANT_NAMES

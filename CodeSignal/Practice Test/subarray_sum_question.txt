@@ -1,0 +1,13 @@
+Given an array of integers a, your task is to find how many of its contiguous subarrays of length m contain a pair of integers with a sum equal to k.
+
+Given the array a, your task is to count the number of indices 0 ≤ i ≤ a.length - m such that a subarray [a[i], a[i + 1], ..., a[i + m - 1]] contains at least one pair (a[s], a[t]), where:  s ≠ t    and    a[s] + a[t] = k
+
+Input: a(array of ints), m(length of subarray), k(sum)
+
+Guaranteed constraints:
+2 ≤ a.length ≤ 105,
+0 ≤ a[i] ≤ 109.
+2 ≤ m ≤ a.length.
+0 ≤ k ≤ 109.
+
+Time Limit: 4 sec

@@ -9,3 +9,13 @@ Rounding to a certain number of decimals,
 
 Empty set notation
     numset = set()
+
+To print stuff on the same line:
+    print("Hello", end=" ")
+
+List comprehension:
+    listname = [x for x in range(10) if condition]
+
+Dictionary: 
+    keys, values, items
+    [(key,value) for key, value in phonebook.items()]
