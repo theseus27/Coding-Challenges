@@ -1,7 +1,7 @@
 #Recursively
 def recurse(n):
-    if n == 0: return 1;
-    if n == 1: return 1;
+    if n == 0: return 1
+    if n == 1: return 1
     else:   return recurse(n-1) + recurse(n-2)
 
 class Solution(object):     
