@@ -56,19 +56,25 @@ public class Lists {
         System.out.println(testlist4);
 
     //OTHER
+        //set
+        testlist4.set(0, 21);
+
+        //get
+        System.out.println(testlist4.get(0));
+
         //clear
         testlist5.clear();
 
         //contains
         System.out.println(testlist4.contains(12));
-
-        //get
-        System.out.println(testlist4.get(0));
         
         //hashCode
         System.out.println(testlist.hashCode());
 
         //indexOf   ***Return index of first occurence or -1***
-        System.out.println();
+        System.out.println(testlist.indexOf(20));
+
+        //max/min
+        System.out.println(Collections.min(testlist));
     }
 }
