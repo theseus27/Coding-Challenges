@@ -1,1 +1,0 @@
-//Returns power of 2 greater to or equal to given number
