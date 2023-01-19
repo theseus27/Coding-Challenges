@@ -1,0 +1,9 @@
+Input: Map, dimensions can be from 2-20
+    Squares are marked 0(open) and 1(wall)
+
+Output: Length of shortest path from station door to escape pod
+    Allowed to remove one wall
+    Count exit and entrance
+
+DP for removing a wall and not removing a wall?
+Or like DP from every square to the exit, and then find the shortest combined path of start-wall and wall-exit
